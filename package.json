@@ -1,0 +1,21 @@
+{
+  "name": "food-app-website",
+  "version": "1.0.0",
+  "author": "Jeffrey Warren",
+  "description": "Website to promote a food app.",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build-css && concurrently \"npm run launch-server\" \"npm run watch-css\"",
+    "launch-server": "live-server --host=localhost --port=8000",
+    "build-css": "node-sass --include-path scss scss/styles.scss styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.17.2"
+  }
+}
