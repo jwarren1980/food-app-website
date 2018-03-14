@@ -1,0 +1,16 @@
+@import "_variables.scss";
+
+nav {
+    ul {
+        li {
+            float: left;
+
+            a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 1em 2em;
+            }
+        }
+    }
+}
